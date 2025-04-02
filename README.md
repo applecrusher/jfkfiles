@@ -15,6 +15,8 @@ Goals
 
 All files are designed to be run from the current directory the file is in. For example, you must be in the download directory to run download.py. This is due to the way the the scripts are getting the file path to get the right input and output directories and files.
 
+An example site can be found here: https://jfkdocsearch.com/
+
 This was tested on a Macbook.
 
 ### 1. Downloading Files from the Archive 
