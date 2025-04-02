@@ -1,10 +1,10 @@
 <?php
 
-/* $host = '127.0.0.1';
+$host = '127.0.0.1';
 $user = 'root';
 $password = 'root';
 $database = '';
-$port = 8889; */
+$port = 8889; 
 
 
 
