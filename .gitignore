@@ -1,2 +1,3 @@
 /corpus/*
 /error_logs/*
+**/._*
