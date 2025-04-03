@@ -57,7 +57,7 @@ This requires LAMP. Copy and past the web/php contents into the root folder of y
 
 ### 10. Add the PDFs to your local file system 
 
-Copy and extract the ZIP file in the root folder of your website
+Copy and extract the ZIP file in the root folder of your website, located here as well: https://jfkdocsearch.com/jfk_documents_original.zip
 
 ### 11. Building the LLM (TODO) 
 
