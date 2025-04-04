@@ -53,7 +53,7 @@ Run web/mysql/import.py to create the tables and import the data. If you need to
 
 ### 9. Creating the Website 
 
-This requires LAMP. Copy and past the web/php contents into the root folder of your website. You should then see the initial page. The only thing you will need to do next is upload the original PDF files so users on mobile devices can go to the specific page we found the query.
+This requires LAMP. Copy and past the web/php contents into the root folder of your website. You should then see the initial page. Next you will need to unzip the pdfjs folder and then upload the original PDF files so users on mobile devices can go to the specific page we found the query.
 
 ### 10. Add the PDFs to your local file system 
 
