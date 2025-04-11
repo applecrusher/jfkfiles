@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class PDFToPNG {
 
-    private static final int NUM_THREADS = 6;
+    private static final int NUM_THREADS = 4;
     
     private static final Path ERROR_LOG = Paths.get(System.getProperty("user.dir"), "..", "..", ".." , "error_logs", "pdf_to_png_errors.log").normalize();
     private static final AtomicInteger pagesProcessed = new AtomicInteger(0);
@@ -45,6 +45,7 @@ public class PDFToPNG {
         if (pdfFiles != null) {
             Arrays.sort(pdfFiles, (f1, f2) -> Long.compare(f2.length(), f1.length()));
             for (File pdfFile : pdfFiles) {
+                if (pdfFile.getName().startsWith(".")) continue;
                 executor.submit(() -> convertPdfToImages(pdfFile, outputDirPath.toString()));
             }
         } else {

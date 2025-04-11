@@ -18,7 +18,7 @@ elif platform.system() == 'Linux':
 
 # Directories
 IMAGE_DIR = (Path.cwd().parent / 'corpus' / 'jfk_documents_imgs').resolve()
-OUTPUT_DIR = (Path.cwd().parent / 'corpus' / 'jfk_documents_json').resolve()
+OUTPUT_DIR = (Path.cwd().parent / 'corpus' / 'jfk_documents_json_v1').resolve()
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def enhance_image(image_path):

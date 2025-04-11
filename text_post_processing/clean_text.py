@@ -88,3 +88,4 @@ def preprocess_all_documents():
 
 if __name__ == "__main__":
     preprocess_all_documents()
+    autocomplete = 
