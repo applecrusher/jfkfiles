@@ -37,7 +37,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'com.example.PNGToText.App_v2'
+    mainClass = 'com.example.PNGToText.App'
 }
 
 tasks.named('test') {

@@ -18,8 +18,8 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class App_v2 {
-    private static final Path IMAGE_DIR = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "corpus", "jfk_documents_imgs").toAbsolutePath().normalize();
-    private static final Path OUTPUT_DIR = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "corpus", "jfk_documents_json_v2").toAbsolutePath().normalize();
+    private static final Path IMAGE_DIR = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "corpus", "mlk_documents_imgs").toAbsolutePath().normalize();
+    private static final Path OUTPUT_DIR = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "corpus", "mlk_documents_json_v2").toAbsolutePath().normalize();
     private static final Path ERROR_LOG = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "error_logs", "png_to_text.log").toAbsolutePath().normalize();
     private static final int NUM_THREADS = Runtime.getRuntime().availableProcessors();
 

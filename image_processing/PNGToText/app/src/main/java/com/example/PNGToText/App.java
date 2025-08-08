@@ -15,8 +15,8 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class App {
-    private static final Path IMAGE_DIR = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "corpus", "jfk_documents_imgs").toAbsolutePath().normalize();
-    private static final Path OUTPUT_DIR = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "corpus", "jfk_documents_json_v1").toAbsolutePath().normalize();
+    private static final Path IMAGE_DIR = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "corpus", "mlk_documents_imgs").toAbsolutePath().normalize();
+    private static final Path OUTPUT_DIR = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "corpus", "mlk_documents_json_v1").toAbsolutePath().normalize();
     private static final int NUM_THREADS = Math.max(Runtime.getRuntime().availableProcessors() - 2, 1);
 
     public static void main(String[] args) {

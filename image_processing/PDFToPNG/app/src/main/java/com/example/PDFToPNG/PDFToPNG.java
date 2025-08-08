@@ -21,14 +21,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class PDFToPNG {
 
-    private static final int NUM_THREADS = 4;
+    private static final int NUM_THREADS = 6;
     
     private static final Path ERROR_LOG = Paths.get(System.getProperty("user.dir"), "..", "..", ".." , "error_logs", "pdf_to_png_errors.log").normalize();
     private static final AtomicInteger pagesProcessed = new AtomicInteger(0);
 
     public static void main(String[] args) {
-        Path pdfDirPath = Paths.get(System.getProperty("user.dir"), "..", "..", ".." , "corpus", "jfk_documents").normalize();
-        Path outputDirPath = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "corpus", "jfk_documents_imgs").normalize();
+        Path pdfDirPath = Paths.get(System.getProperty("user.dir"), "..", "..", ".." , "corpus", "mlk_documents").normalize();
+        Path outputDirPath = Paths.get(System.getProperty("user.dir"), "..", "..", "..", "corpus", "mlk_documents_imgs").normalize();
         
         System.out.println(pdfDirPath.toString());
 
