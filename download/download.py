@@ -8,7 +8,7 @@ from pathlib import Path
 url = 'https://www.archives.gov/research/jfk/release-2025'
 
 # Create a directory to save the downloaded PDFs
-output_dir = Path(__file__).resolve().parent.parent / 'corpus' / 'jfk_documents'
+output_dir = Path(__file__).resolve().parent.parent / 'corpus' / 'mlk_documents'
 output_dir.mkdir(parents=True, exist_ok=True)
 
 # Send a GET request to the webpage
@@ -45,8 +45,9 @@ for link in pdf_links:
     except Exception as e:
         print(f"❌ Failed to download {pdf_url}: {e}")
 
-    time.sleep(0.01)  # Be polite to the server
+    #time.sleep(0.01)  # Be polite to the server
 
 print("🎉 All PDFs have been processed.")
+
 
 
